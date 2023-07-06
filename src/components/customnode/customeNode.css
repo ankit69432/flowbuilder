@@ -1,0 +1,108 @@
+
+.node{
+
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 250, 250);
+    border-radius: 10px;
+    border: 2px solid rgb(12, 150, 143);
+    box-shadow: 0 4px 7px rgb(110, 220, 215);
+}
+input{
+    border: none;
+    border-radius: 3px;
+}
+.inner{
+    height: 100%;
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+}
+.nodeHeader{
+    font: 100;
+    font-size: 20px;
+    color: rgb(91, 90, 90);
+  border-bottom: 1px solid rgb(74, 78, 78);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background: rgb(244, 244, 242);
+    font-weight:400;
+}
+.qDiv{
+    margin:20px;
+    margin-bottom: 0px;
+    display: flex;
+   border: 1px solid rgb(12, 150, 143);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    padding: 5px;
+    font-style:inherit;
+    font-size: 18px;
+    height: 30px;
+    align-items: center;
+    color: rgb(91, 90, 90);
+    background-color:rgb(221, 240, 239) ;
+}
+.options{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+}
+.options button{
+    background: none;
+    border: 2px solid rgb(5, 198, 237);
+    color: rgb(5, 198, 237);
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 5px;
+    height: 30px;
+
+}
+.options button:hover{
+    /* border-color: rgb(14, 56, 75); */
+    border: 3px solid rgb(42, 175, 212);
+    cursor: pointer;
+}
+
+.responseType{
+    height: 20px;
+}
+
+.addNew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typeDiv{
+    border: 1px solid rgb(12, 150, 143);
+    margin:20px;
+    padding: 5px;
+    font-style:inherit;
+    font-size: 18px;
+    height: 30px;
+    align-items: center;
+    color: rgb(91, 90, 90);
+    background-color:rgb(221, 240, 239) ;
+}
+.addNew button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.addNew button:hover{
+    font-size: large;
+}
+.optDiv{
+    width: 30%;
+}
+.bodyNode{
+    min-height: 30px;
+}
+#closeIcon:hover{
+    cursor: pointer;
+}

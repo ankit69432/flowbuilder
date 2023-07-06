@@ -1,0 +1,130 @@
+.example-menu-bar-item {
+    cursor: pointer;
+    border: none;
+  
+    user-select: none;
+    min-width: 34px;
+    line-height: 26px;
+    padding: 0 16px;
+  }
+  
+.example-menu-bar-item:hover {
+    background-color: rgb(208, 208, 208);
+  }
+.chatbotButton{
+    background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbotButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.container {
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+  }
+  
+  .chatButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  .chatComponent{
+    bottom: 80px;
+    right: 20px;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .default-colors {
+    padding: 10px;
+  }
+  
+  .default-colors:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  .default-colors .color {
+    float: left;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+  }
+.Widgetside{
+  display: flex;
+}
+.side{
+  margin:10px;
+  padding: 10px;
+  display: flex;
+}
+.sideIcon{
+  border: 1px solid rgb(0, 0, 0);
+  padding-top: 2px;
+  margin-right: 5px;
+  margin-top: 13px;
+}
+.sideP{
+  padding-top: 6px;
+  margin-top: 10px;
+}
+.Widgetside .side:hover{
+  border: 2px solid rgb(23, 52, 147);
+  box-shadow: 0 4px 8px rgba(63, 87, 166, 0.3);
+  background-color: #ebf0f4;
+}
+
+.shift-right {
+  float: right;
+}
+
+.shift-left {
+  float: left;
+  /* margin-left: 20px; */
+}
+.innerContainer{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding:10px;
+  padding-left: 20px;
+}
+.channel {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.chat {
+  position: relative;
+  top: 200px;
+  right: 20px;
+  z-index: 2;
+  margin: 15px;
+}
+.example-section {
+  align-content: center;
+  align-items: center;
+}
+.example-margin {
+  margin: 0 10px;
+  padding: 10px;
+}
+.builderOption{
+  width:100vw;
+  height: 94vh;
+}
+.chat-Bot{
+  padding-left: 20px;
+}
+

@@ -1,0 +1,140 @@
+.Chatbot-container {
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 70%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Chatbot-header {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    justify-content: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 95%;
+  }
+  
+  .Chatbot-header h2 {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .Chatbot-body {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+/* background-image: url('./download4.jpg'); */
+background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+  }
+  
+  .Chatbot-messages {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+  
+  .message {
+    display: flex;
+  }
+  
+  .Chatbot-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 80%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  .Chatbot-button {
+    background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+   
+  }
+
+.Chatbot-header i{
+font-size:30px;
+color:white;
+padding: 10px;
+padding-bottom: 30px;
+}
+.left {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+overflow: hidden;
+background-color: white;
+margin-right: 10px;
+}
+.left i{
+color:#42424a;
+margin-top: 15px;
+}
+
+.right {
+margin-left: auto;
+}
+
+.message {
+display: flex;
+}
+
+.message.sent .message-content {
+background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+margin-left: auto;
+padding: 10px;
+min-width:100px;
+color: white;
+margin-right: 10px;
+border-radius: 18px;
+border-bottom-right-radius: 0%;
+}
+
+.message.received .message-content {
+background-color: #191919;
+margin-right: auto;
+padding: 10px;
+min-width:100px;
+margin-left: 10px;
+color: white;
+border-radius: 18px;
+border-bottom-left-radius: 0%;
+}
+
+
