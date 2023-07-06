@@ -66,6 +66,7 @@ function Builder() {
     //   style: { stroke: "black", strokeWidth: 2 },
     // },
   ]);
+
   const [label, setLabel] = useState();
   const [text, setText] = useState("");
   const [inputType, setInputType] = useState("");
@@ -139,22 +140,26 @@ function Builder() {
   };
   const createNode = ({ nodeId, actionName }) => {
     setIsVisible(count);
-    console.log(nodeId);
+
+    setNodes((nodes) => {
+      setEdge({
+        id: "" + count,
+        source: nodeId,
+        target: Number(nodes[nodes.length - 1].id) + 1 + "",
+        type: "pointEdge",
+        style: { stroke: "black", strokeWidth: 2 },
+      });
+      return nodes;
+    });
 
     // if (count > ) {
-    setEdge({
-      id: "" + count,
-      source: nodeId,
-      target: Number(count) + 1 + "",
-      type: "pointEdge",
-      style: { stroke: "black", strokeWidth: 2 },
-    });
+
     // }
 
     console.table({
       id: "" + count,
       source: nodeId + "",
-      target: Number(count) + 1 + "",
+      target: +"",
     });
 
     let size = localStorage.getItem("id") === "0" ? 150 : 300;
@@ -257,6 +262,7 @@ function Builder() {
   useEffect(() => {
     console.log(edges);
   }, [edges]);
+
   useEffect(() => {
     if (!isCreated) {
       rootNode();
